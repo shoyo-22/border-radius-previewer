@@ -54,4 +54,26 @@ form {
 
 .input-fields input {
   width: 100%;
+  padding: var(--padding-md);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--bradius);
+  background-color: var(--white);
+  box-shadow: var(--shadow-xs);
+  transition: var(--transition);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+input::placeholder {
+  color: var(--gray-500);
+}
+
+input:hover::placeholder {
+  color: var(--gray-900);
+}
+
+input:focus {
+  border: 1px solid var(--primary-300);
+  box-shadow: var(--focus-shadow);
 }
