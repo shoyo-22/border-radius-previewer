@@ -77,3 +77,39 @@ input:focus {
   border: 1px solid var(--primary-300);
   box-shadow: var(--focus-shadow);
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button {
+  cursor: pointer;
+  border-radius: var(--bradius);
+  padding: var(--padding-md);
+  transition: var(--transition);
+  box-shadow: var(--shadow-xs);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.secondary {
+  border: 1px solid var(--primary-300);
+  background-color: var(--white);
+  color: var(--primary-700);
+}
+
+.secondary:hover {
+  background-color: var(--primary-50);
+}
+
+.secondary:focus {
+  background-color: unset;
+  box-shadow: var(--focus-shadow);
+}
