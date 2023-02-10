@@ -1,5 +1,7 @@
 const borderRadiusForm = document.getElementById("b-radius-form");
 const previewContainer = document.getElementById("preview-container");
+const cssCode = document.getElementById("css-code");
+const copyBtn = document.getElementById("copyBtn");
 
 borderRadiusForm.onsubmit = (event) => {
   event.preventDefault();
@@ -8,6 +10,11 @@ borderRadiusForm.onsubmit = (event) => {
   const values = Object.fromEntries(formData.entries());
   const borders = fourValues(values);
   previewContainer.style.borderRadius = borders;
+  cssCode.textContent = `border-radius: ${borders};`;
+};
+
+copyBtn.onclick = () => {
+  navigator.clipboard.writeText(cssCode.textContent);
 };
 
 function fourValues({ tl, tr, br, bl }) {

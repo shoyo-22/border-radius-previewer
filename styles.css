@@ -113,3 +113,24 @@ button {
   background-color: unset;
   box-shadow: var(--focus-shadow);
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+footer div {
+  padding: 1rem;
+  border-radius: var(--bradius);
+  background-color: var(--gray-100);
+  color: var(--gray-900);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+#copyBtn {
+  align-self: flex-end;
+}
